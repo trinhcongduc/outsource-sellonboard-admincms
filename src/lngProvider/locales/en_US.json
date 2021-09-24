@@ -303,5 +303,10 @@
   "sidebar.map.weather": "Weather map",
   "sidebar.extensions.shuffle": "Shuffle",
   "sidebar.extensions.profile": "Profile",
-  "sidebar.social": "Social Apps"
+  "sidebar.social": "Social Apps",
+  "sidebar.users-page": "User management",
+  "sidebar.module-payify": "Payify",
+  "sidebar.module-shipify": "Shipify",
+  "sidebar.module-notify": "Notify",
+  "sidebar.module-accountify": "Accountify"
 }

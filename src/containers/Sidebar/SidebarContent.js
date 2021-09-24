@@ -68,7 +68,29 @@ const SidebarContent = () => {
 
             <Menu.Item key="sample">
               <Link to="/sample"><i className="icon icon-widgets"/>
-                <IntlMessages id="sidebar.module-payify"/></Link>
+                <IntlMessages id="sidebar.module-shipify"/></Link>
+            </Menu.Item>
+          </Menu>
+          <Menu
+            defaultOpenKeys={[defaultOpenKeys]}
+            selectedKeys={[selectedKeys]}
+            theme={themeType === THEME_TYPE_LITE ? 'lite' : 'dark'}
+            mode="inline">
+
+            <Menu.Item key="sample">
+              <Link to="/sample"><i className="icon icon-widgets"/>
+                <IntlMessages id="sidebar.module-notify"/></Link>
+            </Menu.Item>
+          </Menu>
+          <Menu
+            defaultOpenKeys={[defaultOpenKeys]}
+            selectedKeys={[selectedKeys]}
+            theme={themeType === THEME_TYPE_LITE ? 'lite' : 'dark'}
+            mode="inline">
+
+            <Menu.Item key="sample">
+              <Link to="/sample"><i className="icon icon-widgets"/>
+                <IntlMessages id="sidebar.module-accountify"/></Link>
             </Menu.Item>
           </Menu>
         </CustomScrollbars>
