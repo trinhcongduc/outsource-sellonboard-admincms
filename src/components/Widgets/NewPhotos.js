@@ -1,7 +1,7 @@
 import React from "react";
 import {Button} from "antd";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 
 
 const NewPhotos = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import {Bar, BarChart, ResponsiveContainer, Tooltip} from "recharts";
 import {Col, Row} from "antd";
 
-import Metrics from "components/Metrics";
+import Metrics from "src/components/Metrics";
 import {connect} from "react-redux";
 
 const data = [

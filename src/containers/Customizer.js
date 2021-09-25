@@ -3,7 +3,7 @@ import {Button, Drawer, Form, Radio} from "antd";
 import {useDispatch, useSelector} from "react-redux";
 import Auxiliary from "util/Auxiliary";
 import CustomScrollbars from "util/CustomScrollbars";
-import {onLayoutTypeChange, setThemeType} from "appRedux/actions/Setting";
+import {onLayoutTypeChange, setThemeType} from "src/appRedux/actions/Setting";
 
 import {
   BLUE,

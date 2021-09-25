@@ -4,7 +4,7 @@
   "sidebar.samplePage": "Sample Page",
   "sidebar.dashboard": "Dashboard",
   "sidebar.dashboard.crm": "Crm",
-  "sidebar.components": "Components",
+  "sidebar.components": "src/components",
   "sidebar.components.general": "General",
   "sidebar.general.button": "Button",
   "sidebar.general.icon": "Icon",

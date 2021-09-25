@@ -1,6 +1,6 @@
 import React from "react";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 
 const IconWithTextCard = ({cardColor, icon, title, subTitle, iconColor}) => {
   return (

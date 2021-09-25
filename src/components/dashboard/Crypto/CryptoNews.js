@@ -1,9 +1,9 @@
 import React,{useState} from "react";
 import {Radio} from "antd";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 import {allNews, bitCoinNews, lightCoinNews, rippleNews} from "../../../routes/main/dashboard/Crypto/data"
-import CircularProgress from "components/CircularProgress";
+import CircularProgress from "src/components/CircularProgress";
 import CryptoNewsItem from "./CryptoNewsItem";
 
 const newsData = [allNews, bitCoinNews, lightCoinNews, rippleNews];
