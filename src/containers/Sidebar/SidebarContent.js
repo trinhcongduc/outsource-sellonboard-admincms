@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import {Menu} from "antd";
 import {Link} from "react-router-dom";
 import { FaUsers } from 'react-icons/fa';
-
+import { MdDashboard } from 'react-icons/md';
 
 import CustomScrollbars from "util/CustomScrollbars";
 import SidebarLogo from "./SidebarLogo";
@@ -14,6 +14,12 @@ import {
   THEME_TYPE_LITE
 } from "../../constants/ThemeSetting";
 import IntlMessages from "../../util/IntlMessages";
+import {PAYTIFY_ROUTE} from "../../pages/Modules/Payify/constant";
+import {CUSTOMERS_ROUTE} from "../../pages/CustomerPage/constant";
+import {SHIPIFY_ROUTE} from "../../pages/Modules/Shipify/constant";
+import {NOTIFY_ROUTE} from "../../pages/Modules/Notify/constant";
+import {ACCOUNTIFY_ROUTE} from "../../pages/Modules/Accountify/constant";
+import {DASHBOARD_ROUTE} from "../../pages/DashBoard/constant";
 
 const SidebarContent = () => {
 
@@ -41,14 +47,24 @@ const SidebarContent = () => {
             selectedKeys={[selectedKeys]}
             theme={themeType === THEME_TYPE_LITE ? 'lite' : 'dark'}
             mode="inline">
-
             <Menu.Item key="sample">
-              <Link to="/sample">
+              <Link to={DASHBOARD_ROUTE}>
+                <MdDashboard className="icon" />
+                {showSideBarTitle && <IntlMessages id="sidebar.dashboard"/>}
+              </Link>
+            </Menu.Item>
+          </Menu>
+          <Menu
+            defaultOpenKeys={[defaultOpenKeys]}
+            selectedKeys={[selectedKeys]}
+            theme={themeType === THEME_TYPE_LITE ? 'lite' : 'dark'}
+            mode="inline">
+            <Menu.Item key="sample">
+              <Link to={CUSTOMERS_ROUTE}>
                 <FaUsers className="icon" />
                 {showSideBarTitle && <IntlMessages id="sidebar.users-page"/>}
               </Link>
             </Menu.Item>
-
           </Menu>
           <Menu
             defaultOpenKeys={[defaultOpenKeys]}
@@ -57,7 +73,7 @@ const SidebarContent = () => {
             mode="inline">
 
             <Menu.Item key="sample">
-              <Link to="/sample">
+              <Link to={PAYTIFY_ROUTE}>
                 <i className="icon icon-widgets"/>
                 <IntlMessages id="sidebar.module-payify"/></Link>
             </Menu.Item>
@@ -69,7 +85,7 @@ const SidebarContent = () => {
             mode="inline">
 
             <Menu.Item key="sample">
-              <Link to="/sample"><i className="icon icon-widgets"/>
+              <Link to={SHIPIFY_ROUTE}><i className="icon icon-widgets"/>
                 {showSideBarTitle && <IntlMessages id="sidebar.module-shipify"/>}
               </Link>
             </Menu.Item>
@@ -81,7 +97,7 @@ const SidebarContent = () => {
             mode="inline">
 
             <Menu.Item key="sample">
-              <Link to="/sample"><i className="icon icon-widgets"/>
+              <Link to={NOTIFY_ROUTE}><i className="icon icon-widgets"/>
                 {showSideBarTitle && <IntlMessages id="sidebar.module-notify"/>}
               </Link>
             </Menu.Item>
@@ -93,7 +109,7 @@ const SidebarContent = () => {
             mode="inline">
 
             <Menu.Item key="sample">
-              <Link to="/sample"><i className="icon icon-widgets"/>
+              <Link to={ACCOUNTIFY_ROUTE}><i className="icon icon-widgets"/>
                 {showSideBarTitle && <IntlMessages id="sidebar.module-accountify"/>}
               </Link>
             </Menu.Item>

@@ -308,5 +308,6 @@
   "sidebar.module-payify": "Payify",
   "sidebar.module-shipify": "Shipify",
   "sidebar.module-notify": "Notify",
-  "sidebar.module-accountify": "Accountify"
+  "sidebar.module-accountify": "Accountify",
+  "sidebar.module-dashboard": "Dashboard"
 }

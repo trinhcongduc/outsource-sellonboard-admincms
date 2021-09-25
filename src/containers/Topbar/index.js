@@ -3,7 +3,7 @@ import {Layout} from "antd";
 import {Link} from "react-router-dom";
 
 import {toggleCollapsedSideNav} from "../../appRedux/actions";
-import UserInfo from "pages/Profile/pages/profile";
+import UserInfo from "./UserProfile";
 import Auxiliary from "util/Auxiliary";
 
 

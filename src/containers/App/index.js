@@ -22,6 +22,10 @@ import {
   NAV_STYLE_DEFAULT_HORIZONTAL,
   NAV_STYLE_INSIDE_HEADER_HORIZONTAL
 } from "../../constants/ThemeSetting";
+import {renderRoutes} from "react-router-config";
+import {routes} from "../../routes/routeConfig";
+import {DASHBOARD_ROUTE} from "../../pages/DashBoard/constant";
+import {SIGNIN_ROUTE, SIGNUP_ROUTE} from "../../pages/Authentication/constant";
 
 const RestrictedRoute = ({component: Component, location, token, ...rest}) =>
   <Route
@@ -111,9 +115,9 @@ const App = () => {
     if (location.pathname === '/') {
       console.log('initURL', initURL);
       if (token === null) {
-        history.push('/signin');
-      } else if (initURL === '' || initURL === '/' || initURL === '/signin') {
-        history.push('/home');
+        history.push(SIGNIN_ROUTE);
+      } else if (initURL === '' || initURL === '/' || initURL === SIGNIN_ROUTE) {
+        history.push(DASHBOARD_ROUTE);
       } else {
         history.push(initURL);
       }
@@ -129,8 +133,9 @@ const App = () => {
         messages={currentAppLocale.messages}>
 
         <Switch>
-          <Route exact path='/signin' component={SignIn}/>
-          <Route exact path='/signup' component={SignUp}/>
+          <Route exact path={SIGNIN_ROUTE} component={SignIn}/>
+          <Route exact path={SIGNUP_ROUTE} component={SignUp}/>
+          {/*{renderRoutes(routes)}*/}
           <RestrictedRoute path={`${match.url}`} token={token} location={location}
                            component={MainApp}/>
         </Switch>
