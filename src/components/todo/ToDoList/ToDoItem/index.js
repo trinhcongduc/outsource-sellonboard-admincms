@@ -1,8 +1,8 @@
 import React from "react";
 import {Avatar, Badge, Checkbox} from "antd";
 
-import labels from "routes/inBuiltApps/Todo/data/labels";
-import users from "routes/inBuiltApps/Todo/data/users";
+import labels from "src/routes/inBuiltApps/Todo/data/labels";
+import users from "src/routes/inBuiltApps/Todo/data/users";
 
 
 const ToDoItem = (({todo, onTodoSelect, onTodoChecked, onMarkAsStart}) => {

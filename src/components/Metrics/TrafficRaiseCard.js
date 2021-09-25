@@ -2,7 +2,7 @@ import React from "react";
 import {Line, LineChart, ResponsiveContainer, Tooltip} from "recharts";
 import {Col, Row} from "antd";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 
 const data = [
   {name: 'Page A', traffic: 200},

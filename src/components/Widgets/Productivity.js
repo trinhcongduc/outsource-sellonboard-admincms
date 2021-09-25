@@ -2,7 +2,7 @@ import React from "react";
 import {Avatar} from "antd";
 import {Area, AreaChart, ResponsiveContainer} from "recharts";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 
 const data = [
   {name: 'Page A', price: 200},
@@ -20,7 +20,7 @@ const Productivity = () => {
       <div className="gx-text-center gx-px-3 gx-pt-3">
         <div className="gx-d-flex gx-justify-content-around gx-align-items-center gx-mb-3">
           <i className="icon icon-chart gx-fs-xxl gx-text-grey"/>
-          <Avatar className="gx-size-80" src={require("assets/images/avatar/stella-johnson.png")}/>
+          <Avatar className="gx-size-80" src={require("src/assets/images/avatar/stella-johnson.png")}/>
           <i className="icon icon-chat gx-fs-xxl gx-text-grey"/>
         </div>
         <div className="gx-mb-3">

@@ -1,6 +1,6 @@
 import React from "react";
 import {Badge} from "antd";
-import WidgetHeader from "components/WidgetHeader/index";
+import WidgetHeader from "src/components/WidgetHeader/index";
 
 function Status(props) {
   const isType = props.isType;

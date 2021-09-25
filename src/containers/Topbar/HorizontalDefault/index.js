@@ -4,12 +4,12 @@ import {useDispatch, useSelector} from "react-redux";
 import CustomScrollbars from "util/CustomScrollbars";
 import languageData from "../languageData";
 import SearchBox from "components/SearchBox";
-import UserInfo from "components/UserInfo";
+import UserInfo from "pages/Profile/pages/profile";
 import AppNotification from "components/AppNotification";
 import MailNotification from "components/MailNotification";
 import HorizontalNav from "../HorizontalNav";
 import {Link} from "react-router-dom";
-import {switchLanguage, toggleCollapsedSideNav} from "../../../appRedux/actions/Setting";
+import {switchLanguage, toggleCollapsedSideNav} from "../../../appRedux/actions";
 import IntlMessages from "../../../util/IntlMessages";
 
 const {Header} = Layout;

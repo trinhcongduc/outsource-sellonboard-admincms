@@ -1,7 +1,7 @@
 import React from "react";
 import {Button} from "antd";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 
 const ToolTheDay = () => {
   return (
@@ -10,7 +10,7 @@ const ToolTheDay = () => {
         <div className="gx-separator gx-bg-success-dark"/>
         <h2 className="gx-mb-4 gx-text-success-dark">Tool's Day</h2>
         <img className="gx-mb-4 gx-rounded-circle gx-img-fluid gx-object-cover"
-             src={require("assets/images/widget/spoons.png")} alt='spoons'/>
+             src={require("src/assets/images/widget/spoons.png")} alt='spoons'/>
       </div>
       <Button type="primary"
               className="gx-mt-sm-4 gx-fs-sm gx-btn-block gx-mb-0 gx-text-uppercase gx-border-radius-top-left-0 gx-border-radius-top-right-0"

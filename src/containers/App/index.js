@@ -7,8 +7,8 @@ import {IntlProvider} from "react-intl";
 
 import AppLocale from "lngProvider";
 import MainApp from "./MainApp";
-import SignIn from "../SignIn";
-import SignUp from "../SignUp";
+import SignIn from "pages/Authentication/SignIn";
+import SignUp from "pages/Authentication/SignUp";
 import {setInitUrl} from "appRedux/actions/Auth";
 import {onLayoutTypeChange, onNavStyleChange, setThemeType} from "appRedux/actions/Setting";
 
@@ -109,10 +109,11 @@ const App = () => {
 
   useEffect(() => {
     if (location.pathname === '/') {
+      console.log('initURL', initURL);
       if (token === null) {
         history.push('/signin');
       } else if (initURL === '' || initURL === '/' || initURL === '/signin') {
-        history.push('/sample');
+        history.push('/home');
       } else {
         history.push(initURL);
       }

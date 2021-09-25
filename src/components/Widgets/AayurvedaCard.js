@@ -1,6 +1,6 @@
 import React from "react";
 
-import Widget from "components/Widget/index";
+import Widget from "src/components/Widget/index";
 
 const AayurvedaCard = () => {
   return (
@@ -14,7 +14,7 @@ const AayurvedaCard = () => {
         <span className="gx-text-primary gx-pointer gx-text-uppercase gx-mb-3 gx-mb-xxl-2 gx-d-block">learn More</span>
       </div>
       <div className="gx-mt-xxl-3 gx-ayurveda-thumb">
-        <img className="gx-img-fluid gx-w-100" alt="ayurveda" src={require("assets/images/widget/ayurveda.png")}/>
+        <img className="gx-img-fluid gx-w-100" alt="ayurveda" src={require("src/assets/images/widget/ayurveda.png")}/>
       </div>
     </Widget>
   );
